@@ -248,7 +248,7 @@ var test_phase = {
       on_finish: function(data) {
         resp = jsPsych.data.get().last(1).values()[0].response;
         cate = [jsPsych.timelineVariable("data1"),jsPsych.timelineVariable("data2")][resp].type; //change to 'type' for exps 3 and 4 ********
-        if(cate === "HF"){data.correct = 1;}else{data.correct = 0;} // change to 'LF' for exp 4 ***************************
+        if(cate === "LF"){data.correct = 1;}else{data.correct = 0;} // change to 'LF' for exp 4 ***************************
         
       },
       
